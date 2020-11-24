@@ -8,7 +8,7 @@ config = edict()
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"           ### if to use cuda,
 
 config.DETECT = edict()
-config.DETECT.model_path='Neck_Detection//models/detector'         ### saved_model or tflite
+config.DETECT.model_path='Neck_Detection/models/detector'         ### saved_model or tflite
 config.DETECT.topk=10                               ### max boxes
 config.DETECT.min_face=1600                         ### max boxes
 config.DETECT.thres=0.5                             ### thres for nms
