@@ -8,7 +8,7 @@ config = edict()
 os.environ["CUDA_VISIBLE_DEVICES"] = "-1"           ### if to use cuda,
 
 config.DETECT = edict()
-config.DETECT.model_path='./models/detector'         ### saved_model or tflite
+config.DETECT.model_path='Neck_Detection//models/detector'         ### saved_model or tflite
 config.DETECT.topk=10                               ### max boxes
 config.DETECT.min_face=1600                         ### max boxes
 config.DETECT.thres=0.5                             ### thres for nms
@@ -17,7 +17,7 @@ config.DETECT.input_shape=(256,320,3)               ### input shape for detector
 
 
 config.KEYPOINTS = edict()
-config.KEYPOINTS.model_path='./model/keypoints'     ### saved_model or tflite
+config.KEYPOINTS.model_path='Neck_Detection/models/keypoints'     ### saved_model or tflite
 config.KEYPOINTS.dense_dim=136+3+4                  #### output dimension
 config.KEYPOINTS.p_num=68                           #### 68 points
 config.KEYPOINTS.base_extend_range=[0.2,0.3]        ####
